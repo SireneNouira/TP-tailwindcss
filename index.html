@@ -26,14 +26,18 @@
       }
     </style>
   </head>
-  <body>
-    <header>
+  <body class="lg:p-40">
+    <header class="flex justify-between ">
       <div class="flex justify-between p-10">
-        <img src="./assets/images/logo.svg" alt="logo" />
-        <img src="./assets/images/icon-menu.svg" alt="icon-menu" class="" />
+        <img src="./assets/images/logo.svg" alt="logo" class="lg:w-36" />
+        <img
+          src="./assets/images/icon-menu.svg"
+          alt="icon-menu"
+          class="md:hidden"
+        />
       </div>
-      <nav class="sm:hidden">
-        <ul>
+      <nav class="md:flex md:justify-center md:items-center md:p-10">
+        <ul class="flex gap-9 md:text-2xl text-slate-500">
           <li>Home</li>
           <li>New</li>
           <li>Popular</li>
@@ -43,18 +47,27 @@
       </nav>
     </header>
     <main class="flex justify-center items-center flex-col p-10">
-      <section>
+      <section class="md:flex md:gap-10 md:pt-0">
         <img
           src="./assets/images/image-web-3-mobile.jpg"
           alt="image"
-          class="flex"
+          class="flex md:hidden"
         />
+
         <div class="flex flex-col gap-3">
+          <img
+            src="./assets/images/image-web-3-desktop.jpg"
+            alt=""
+            class="h-96"
+          />
+          <div class="md:flex">
+            <article class="md:w-1/2">
           <h1 class="text-6xl font-bold">
             The Bright <br />
-            Future of Web <br />
+            Future of <br>Web 
             3.0?
-          </h1>
+          </h1></article>
+          <article class="md:w-1/2 md:gap-3">
           <p class="opacity-75">
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of the people. But is it
@@ -64,10 +77,10 @@
             href=""
             class="bg-red-500 p-4 text-1xl text-white font-bold w-40 h-14 text-center"
             >READ MORE</a
-          >
+          ></article></div>
         </div>
 
-        <article class="flex flex-col bg-slate-900 p-8 mt-20">
+        <article class="flex flex-col bg-slate-900 p-8 mt-20 md:m-0">
           <h2 class="text-orange-300 text-4xl font-bold pb-6">New</h2>
 
           <h3 class="pb-2 font-bold text-white text-2xl">
